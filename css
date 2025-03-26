@@ -194,16 +194,16 @@ div.footer-below{
 }
 
 .home_image{
-    min-height: 60vh;
+    min-height: 70vh;
     flex-basis: 100%;
     /*background-image: url('Images/home_page.png');*/
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    border-radius: 20px;
+    /*border-radius: 20px;
     margin-left: 20px;
-    margin-right: 20px;
+    margin-right: 20px;*/
     margin-bottom: 80px;
     padding: 20px;
     animation: bg-change 9s infinite linear;
@@ -217,6 +217,122 @@ div.footer-below{
     width: 100%;
     height: 15vh;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #fefef6 100%);
+}
+
+main div#mainContent-inner div.row.dnnpane div.col-md-12.contentPane{
+    padding: 0px;
+}
+main.no-bg div#mainContent-inner div.row.dnnpane div.col-md-12.contentPane{
+    padding: 20px;
+}
+
+div.nyito_oldal_2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+.nyito_oldal_2_1 {
+    background-image: url('Images/ballett_cipo_kep.png'); 
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    width: 20vw;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.nyito_oldal_2_2{
+    width: 40vw;
+}
+
+.nyito_oldal_3 {
+    background-color: #E3DBCD;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+.nyito_oldal_3_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nyito_oldal_3_1 div{
+    transition: transform 0.3s ease-in-out;
+}
+.nyito_oldal_3_1 div:hover{
+    transform: translateY(-5px);
+}
+
+.nyito_oldal_3_1_ruha {
+    background-image: url('Images/ruha.png'); 
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+    width: 15vw;
+    height: 35vh;
+    overflow: hidden;
+}
+.nyito_oldal_3_1_cipo {
+    background-image: url('Images/cipo.png'); 
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+    width: 15vw;
+    height: 35vh;
+    overflow: hidden;
+}
+.nyito_oldal_3_1_kiegeszito {
+    background-image: url('Images/kiegeszito.png'); 
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+    width: 15vw;
+    height: 35vh;
+    overflow: hidden;
+}
+.nyito_oldal_3_1_smink {
+    background-image: url('Images/smink.png'); 
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+    width: 15vw;
+    height: 35vh;
+    overflow: hidden;
+}
+.nyito_oldal_3_1 p{
+    margin-bottom: 0px;
+}
+.nyito_oldal_4 {
+    background-image: url('Images/nyito.png'); 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 80px;
+    padding: 10%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+}
+.nyito_oldal_4_1 p,
+.nyito_oldal_4_1 h6{
+    color: #fefef6;
+    font-size: 2em;
+    font-family: 'Tinos', serif;
 }
 
 .faq_image{
@@ -307,8 +423,8 @@ div.footer-below{
 .hc-cart-section h3,
 .hc-cart-section h6,
 .col-md-12 h3,
-#dnn_ctr447_HtmlModule_lblContent h5 span,
-#dnn_ctr448_HtmlModule_lblContent h5 span,
+#dnn_ctr447_HtmlModule_lblContent h5,
+#dnn_ctr448_HtmlModule_lblContent h5,
 .table,
 .table tr td,
 .table tbody tr td,
@@ -320,7 +436,9 @@ a,
 h4,
 h2,
 h6,
-div.panel-footer a{
+div.panel-footer a,
+div.nyito_oldal_2_2 p,
+.nyito_oldal_3_1 p{
     color: #4F4239;
     font-family: 'Tinos', serif !important;
 }
@@ -336,7 +454,7 @@ div#dnn_ctr500_HtmlModule_lblContent p{
 
 a:visited,
 ol.breadcrumb li::before{
-    color: #fefef6;
+    color: #4F4239;
 }
 
 span.active{
@@ -510,7 +628,8 @@ div.dnnFormItem a,
 a.dnnPrimaryAction,
 a.dnnSecondaryAction,
 a.btn-primary,
-a.btn.btn-primary.btn-sm {
+a.btn.btn-primary.btn-sm,
+.nyito_oldal_4_1 p a {
   background: none;
   padding: 1em 2em;
   font-size: 12px;
@@ -542,7 +661,8 @@ div.dnnFormItem a:hover,
 a.dnnPrimaryAction:hover,
 a.dnnSecondaryAction:hover,
 a.btn-primary:hover,
-a.btn.btn-primary.btn-sm:hover{
+a.btn.btn-primary.btn-sm:hover,
+.nyito_oldal_4_1 p a:hover{
   background: none;
   background-color: #EACCC0;
   box-shadow: 0px 15px 20px rgba(79, 66, 57, 0.5);
@@ -763,8 +883,16 @@ ul.pagination li.active a:hover{
 
 
 .faq-container {
-    max-width: 750px;
+    width: 80%;
     margin: auto;
+}
+
+#dnn_ctr493_HtmlModule_lblContent {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .faq-item {
@@ -833,6 +961,50 @@ div.xs-col-12 p{
     margin-right: 20px;
 }
 
+#dnn_ctr496_HtmlModule_lblContent,
+.faq-container,
+.row-fluid.hc-category,
+.DnnModule-447,
+.DnnModule-448,
+.DnnModule-446,
+.DnnModule-445,
+.DnnModule-389,
+.DnnModule-416,
+.DnnModule-390{
+    margin: 20px;
+}
+
+.dnnFormMessage.dnnFormInfo,
+.alert.alert-info{
+    background: #EACCC0;
+    border: 1px solid #4F4239;
+    color: #4F4239;
+    
+}
+
+
+
+
+.badge{
+    color: #EACCC0;
+    background-color: #4F4239;
+}
+strong{
+    color: #4F4239;
+}
+
+#dnnMenu .dropdown-menu li{
+    background: #EACCC0;
+    color: #EACCC0;
+}
+#dnnMenu .dropdown-menu li:hover a span{
+    color: #EACCC0;
+}
+#dnnMenu .dropdown-menu li:hover{
+    background: #4F4239;
+    color: #EACCC0;
+}
+
 @media only screen and (max-width: 767px){
 
     div.navbar-header{
@@ -889,7 +1061,88 @@ div.xs-col-12 p{
     .hc-cart .hc-cart-actions{
         height: auto;
     }
+    div.nyito_oldal_2 {
+        flex-direction: column;
+    }
+    div.nyito_oldal_2_1{
+        order: 2;
+        width: 60vw;
+    }
+    div.nyito_oldal_2_2{
+        order: 1;
+        width: 60vw;
+    }
+    .nyito_oldal_3 {
+        justify-content: center; /* Középre igazítás */
+    }
+
+    .nyito_oldal_3 > * { /* A gyermek elemek formázása */
+        flex: 0 1 calc(50% - 20px); /* A szélességet 50%-ra állítjuk, kis távolságot hagyva */
+        margin: 10px; /* Távolságot adunk az elemek között */
+        text-align: center; /* Ha szükséges, középre igazítja a tartalmat */
+        
+    }
+    .nyito_oldal_3_1 div{
+        width: 30vw;
+    }
+    div.footer-above div div.row.dnnpane{
+        flex-direction: column;
+        justify-content: center;
+    }
+    div.footer-above div div.row.dnnpane div{
+        width: 100%;
+    }
+    #dnn_ctr485_HtmlModule_lblContent,
+    #dnn_ctr491_HtmlModule_lblContent,
+    #dnn_ctr500_HtmlModule_lblContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+    div.dnnRegistrationForm{
+    min-width: unset !important;
 }
+.LoginPanel{
+    width: unset;
+}
+/*.dnnForm.dnnLoginService.dnnClear div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}*/
+.dnnForm.dnnLoginService.dnnClear div a{
+    margin-left: 10px;
+}
+.dnnForm.dnnLoginService.dnnClear div div ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.dnnFormItem > label.dnnFormLabel, .dnnFormItem > span.dnnFormLabel{
+    width: 10%;
+}
+div.dnnRegistrationForm .dnnForm{
+    width: unset;
+}
+.dnnFormMessage.dnnFormInfo,
+.alert.alert-info{
+    
+    width: 80%;
+}
+    
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
