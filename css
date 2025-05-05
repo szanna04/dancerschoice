@@ -32,7 +32,7 @@ li.menuItem {
   cursor: pointer;
 }
 
-li.menuItem a{
+li.menuItem a, div.sib-form-block p{
     /*font-family: 'Tinos', serif !important;*/
     font-family: 'Playfair Display', serif !important;
     color: #4F4239;
@@ -340,7 +340,6 @@ div.nyito_oldal_2 {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    margin-bottom: 80px;
     padding: 10%;
     height: 60vh;
     display: flex;
@@ -384,7 +383,7 @@ div.nyito_oldal_2 {
     align-items: center;
 }
 
-.contact_image p, .faq_image p{
+.contact_image h1, .faq_image h1{
     color: #4F4239;
     font-weight: bold;
     font-size: 3.5rem;
@@ -657,7 +656,8 @@ a.dnnSecondaryAction,
 a.btn-primary,
 a.btn.btn-primary.btn-sm,
 .nyito_oldal_4_1 p a,
-#hcWriteReviewbtn{
+#hcWriteReviewbtn,
+button.dnnTertiaryAction{
   background: none;
   padding: 1em 2em;
   font-size: 12px;
@@ -693,7 +693,8 @@ a.dnnSecondaryAction:hover,
 a.btn-primary:hover,
 a.btn.btn-primary.btn-sm:hover,
 .nyito_oldal_4_1 p a:hover,
-#hcWriteReviewbtn:hover{
+#hcWriteReviewbtn:hover,
+button.dnnTertiaryAction:hover{
   background: none;
   background-color: #EACCC0;
   box-shadow: 0px 15px 20px rgba(79, 66, 57, 0.5);
@@ -819,6 +820,7 @@ div.row-fluid.hc-related-items div.col-xs-6.col-md-3{
     width: 30vw;
     height: 60vh;
     margin-right: 0px !important;
+    min-height: 400px;
 }
 div.col-xs-6.col-md-4,
 div.row-fluid.hc-category div div.col-md-3{
@@ -1269,11 +1271,100 @@ img#hcProductImage,td img{
     border-radius: 10px;
 }
 
+.hc-rating {
+    background-image: url(Images/Stars3.png) !important;
+    width: 125px;
+    height: 32px;
+    float: left;
+    margin-top: -4px;
+    
+}
+
+li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab,
+ul.dnnButtonGroup li{
+    background-color: #EACCC0 !important;
+    background: #EACCC0 !important;
+}
+
+div#dnn_ctr385_ModuleContent div div div div div.hc-product-cards{
+    display: unset;
+}
+
+.dnnSearchResultPanel, .dnnSearchBoxPanel {
+    background-color: #EACCC0;
+}
+
+div#dnn_ctr399_ModuleContent{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.hc-price-slider .ui-widget-header {
+    background: #EACCC0;
+}
+
+div#dnn_ctr399_ModuleContent{
+    display: none;
+}
+
+#backToTopButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4F4239;
+    color: #EACCC0;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 15px;
+    display: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+#backToTopButton:hover {
+    background-color: #EACCC0;
+    color:#4F4239;
+    text-decoration: none;
+}
+
+#dnn_footer_25_1,
+#dnn_footer_25_2,
+#dnn_footer_25_3,
+#dnn_footer_25_4{
+    border: unset !important;
+}
+
+div#dnn_P1_75_1{
+    padding: 0px;
+}
+#mainContent-inner {
+    padding-bottom: 0px;
+}
+
 @media only screen and (max-width: 1400px){
     div.footer-above div div.row.dnnpane{
         flex-wrap: wrap;
         gap: 10px;
         justify-content: center;
+    }
+}
+
+@media (min-width: 992px) {
+    #dnn_P2_25_1{
+        width: 100% !important;
+    }
+    #dnn_P2_25_2, .col-md-8 {
+        width: 100% !important;
+    }
+    .hc-slider-controls{
+        display: flex;
+        justify-content: center;
+    }
+    .hc-slider-controls > div {
+        width:unset;
+        margin-left: 20px;
     }
 }
 
@@ -1418,6 +1509,9 @@ img#hcProductImage,td img{
     .navbar-default .navbar-toggle .icon-bar {
         background-color: #4F4239;
     }
+    div.hc-record-grid.hc-product-grid div div div.panel-heading{
+        min-height: 70px;
+    }
 }
 
 @media only screen and (max-width: 480px){
@@ -1457,7 +1551,27 @@ img#hcProductImage,td img{
         min-width: 25px !important;
         min-height: 25px !important;
     }
+    .nyito_oldal_4_1 p, .nyito_oldal_4_1 h6 {
+        font-size: 1.7em;
+    }
 }
+
+@media  only screen and (max-height: 600px) {
+  div#dnn_ctr526_ModuleContent div div div div.col-md-3 {
+    min-height: 400px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
